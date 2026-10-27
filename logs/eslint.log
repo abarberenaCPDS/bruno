@@ -1,0 +1,21 @@
+
+/Users/abe/src/bruno/packages/bruno-app/src/components/Devtools/Console/index.js
+    9:3   warning  'IconBug' is defined but never used                          no-unused-vars
+  238:85  warning  'debugErrors' is assigned a value but never used             no-unused-vars
+  294:9   warning  'filteredLogs' is assigned a value but never used            no-unused-vars
+  295:9   warning  'filteredRequests' is assigned a value but never used        no-unused-vars
+  318:9   warning  'handleClearDebugErrors' is assigned a value but never used  no-unused-vars
+
+/Users/abe/src/bruno/packages/bruno-app/src/providers/ReduxStore/slices/collections/index.js
+   384:30  warning  'folderUid' is assigned a value but never used   no-unused-vars
+   544:44  warning  'requestUid' is assigned a value but never used  no-unused-vars
+   655:44  warning  'timestamp' is assigned a value but never used   no-unused-vars
+  1589:39  warning  'headers' is assigned a value but never used     no-unused-vars
+  2406:20  warning  Expected '===' and instead saw '=='              eqeqeq
+  3142:28  warning  Expected '!==' and instead saw '!='              eqeqeq
+  3561:69  warning  'error' is assigned a value but never used       no-unused-vars
+  3565:15  warning  'folder' is assigned a value but never used      no-unused-vars
+  4072:13  warning  'request' is assigned a value but never used     no-unused-vars
+
+✖ 14 problems (0 errors, 14 warnings)
+

@@ -1,0 +1,428 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/26.12.1/bin/node",
+      "/Users/abe/src/bruno/node_modules/.bin/playwright",
+      "test",
+      "tests/devtools/network",
+      "--project=default",
+      "--workers=1"
+    ],
+    "configFile": "/Users/abe/src/bruno/playwright.config.ts",
+    "rootDir": "/Users/abe/src/bruno",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/abe/src/bruno/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "default",
+        "name": "default",
+        "testDir": "/Users/abe/src/bruno/tests",
+        "testIgnore": [
+          "ssl/**",
+          "auth/**",
+          "benchmarks/**",
+          "proxy/system-pac/**",
+          "mock-server/**"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/abe/src/bruno/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "auth",
+        "name": "auth",
+        "testDir": "/Users/abe/src/bruno/tests/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/abe/src/bruno/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ssl",
+        "name": "ssl",
+        "testDir": "/Users/abe/src/bruno/tests/ssl",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/abe/src/bruno/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "system-pac",
+        "name": "system-pac",
+        "testDir": "/Users/abe/src/bruno/tests/proxy/system-pac",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/abe/src/bruno/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mock-server",
+        "name": "mock-server",
+        "testDir": "/Users/abe/src/bruno/tests/mock-server",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests/devtools/network/network-clear-logs.spec.ts",
+      "file": "tests/devtools/network/network-clear-logs.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DevTools Network Tab Clear",
+          "file": "tests/devtools/network/network-clear-logs.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "clears every network request row from the Network tab",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6310,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Electron #0] |Added Extensions:  Redux DevTools, React Developer Tools\n"
+                        },
+                        {
+                          "text": "[Electron #0] |Loading Extension: React Developer Tools\n[Electron #0] |Loading Extension: Redux DevTools\n"
+                        },
+                        {
+                          "text": "[Electron #0] |Preferences file is located at: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/preferences.json\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/tmp/transient/66860/bruno-scratch-3FJWhJ/metadata.json\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/tmp/transient/66860/bruno-scratch-3FJWhJ/opencollection.yml\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-tODl2c/bruno.json\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-tODl2c/network-log-scroll.bru\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[Electron #0] |(electron) 'session.getAllExtensions' is deprecated and will be removed. Please use 'session.extensions.getAllExtensions' instead.\n"
+                        },
+                        {
+                          "text": "[Electron #0] |(electron) 'session.loadExtension' is deprecated and will be removed. Please use 'session.extensions.loadExtension' instead.\n"
+                        },
+                        {
+                          "text": "[Electron #0] |(node:66860) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:\n[Electron #0] |  Permission 'notifications' is unknown.\n[Electron #0] |  Permission 'contextMenus' is unknown.\n\n"
+                        },
+                        {
+                          "text": "[Electron #0] |(node:66860) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:\n[Electron #0] |  Permission 'notifications' is unknown.\n[Electron #0] |  Permission 'contextMenus' is unknown.\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Send a request so the Network tab has an entry",
+                          "duration": 1089,
+                          "steps": [
+                            {
+                              "title": "Open collection \"network-log-scroll\"",
+                              "duration": 331
+                            },
+                            {
+                              "title": "Navigate to collection \"network-log-scroll\" and open request \"network-log-scroll\"",
+                              "duration": 294
+                            },
+                            {
+                              "title": "Send request",
+                              "duration": 452
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Open DevTools → Network and confirm the request is listed",
+                          "duration": 415,
+                          "steps": [
+                            {
+                              "title": "Open DevTools → Network",
+                              "duration": 409
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Clear the network requests from the tab controls",
+                          "duration": 67
+                        }
+                      ],
+                      "startTime": "2026-10-27T03:32:47.345Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/abe/src/bruno/test-results/devtools-network-network-c-7d1cd-st-row-from-the-Network-tab-default/attachments/trace-a9d9f132b07dc5b016bbd38dc1acd65337bed6f7.zip"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/abe/src/bruno/test-results/devtools-network-network-c-7d1cd-st-row-from-the-Network-tab-default/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ad09fdf05e8e603625c4-c1a3220b03b9d600bf62",
+              "file": "tests/devtools/network/network-clear-logs.spec.ts",
+              "line": 15,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests/devtools/network/network-log-details-scroll.spec.ts",
+      "file": "tests/devtools/network/network-log-details-scroll.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DevTools Network Log Details Scroll",
+          "file": "tests/devtools/network/network-log-details-scroll.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "last network log lines are visible and scrollable in request details panel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6275,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Electron #0] |Added Extensions:  Redux DevTools, React Developer Tools\n"
+                        },
+                        {
+                          "text": "[Electron #0] |Loading Extension: React Developer Tools\n"
+                        },
+                        {
+                          "text": "[Electron #0] |Loading Extension: Redux DevTools\n"
+                        },
+                        {
+                          "text": "[Electron #0] |Preferences file is located at: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/preferences.json\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/tmp/transient/66982/bruno-scratch-zBpG81/metadata.json\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/tmp/transient/66982/bruno-scratch-zBpG81/opencollection.yml\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-u4Dc91/bruno.json\n"
+                        },
+                        {
+                          "text": "[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-u4Dc91/network-log-scroll.bru\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[Electron #0] |Debugger ending on ws://127.0.0.1:60788/a3c98d50-8f26-4647-a3eb-522d8230aeb7\n[Electron #0] |For help, see: https://nodejs.org/en/docs/inspector\n"
+                        },
+                        {
+                          "text": "[Electron #0] |(electron) 'session.getAllExtensions' is deprecated and will be removed. Please use 'session.extensions.getAllExtensions' instead.\n"
+                        },
+                        {
+                          "text": "[Electron #0] |(electron) 'session.loadExtension' is deprecated and will be removed. Please use 'session.extensions.loadExtension' instead.\n"
+                        },
+                        {
+                          "text": "[Electron #0] |(node:66982) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:\n[Electron #0] |  Permission 'notifications' is unknown.\n[Electron #0] |  Permission 'contextMenus' is unknown.\n\n"
+                        },
+                        {
+                          "text": "[Electron #0] |(node:66982) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:\n[Electron #0] |  Permission 'notifications' is unknown.\n[Electron #0] |  Permission 'contextMenus' is unknown.\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Open fixture request and send it",
+                          "duration": 1071,
+                          "steps": [
+                            {
+                              "title": "Open collection \"network-log-scroll\"",
+                              "duration": 348
+                            },
+                            {
+                              "title": "Navigate to collection \"network-log-scroll\" and open request \"network-log-scroll\"",
+                              "duration": 296
+                            },
+                            {
+                              "title": "Send request",
+                              "duration": 425
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Open DevTools Network tab and select the request",
+                          "duration": 506
+                        },
+                        {
+                          "title": "Open Network sub-tab in request details panel",
+                          "duration": 97
+                        },
+                        {
+                          "title": "Verify nested inner scroller overflows",
+                          "duration": 19
+                        },
+                        {
+                          "title": "Outer panel scroll alone does not reveal the last log line",
+                          "duration": 44
+                        },
+                        {
+                          "title": "Scroll nested inner container and verify last log line is visible in viewport",
+                          "duration": 56
+                        }
+                      ],
+                      "startTime": "2026-10-27T03:32:53.675Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/abe/src/bruno/test-results/devtools-network-network-l-5b12c-le-in-request-details-panel-default/attachments/trace-35af96c5fa37833b1da0474460aaf77b9c637a5f.zip"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/abe/src/bruno/test-results/devtools-network-network-l-5b12c-le-in-request-details-panel-default/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2772d03f4817c4b7959d-1c363f1650e0bbbd0a67",
+              "file": "tests/devtools/network/network-log-details-scroll.spec.ts",
+              "line": 26,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T03:32:23.838Z",
+    "duration": 36407.350000000006,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

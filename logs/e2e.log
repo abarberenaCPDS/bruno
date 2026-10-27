@@ -1,0 +1,141 @@
+[WebServer] 
+[WebServer] > dev:web
+[WebServer] > npm run dev --workspace=packages/bruno-app
+[WebServer] 
+[WebServer] 
+[WebServer] > @usebruno/app@2.0.0 dev
+[WebServer] > rsbuild dev
+[WebServer] 
+[WebServer] Rsbuild v1.7.6
+[WebServer] 
+[WebServer]   ➜  Local:    http://localhost:3000/
+[WebServer]   ➜  Network:  http://192.168.0.75:3000/
+[WebServer] 
+[WebServer] start   build started...
+[WebServer] warn    Build warnings: 
+[WebServer] File: ../../node_modules/amdefine/amdefine.js:1:1
+[WebServer]   ⚠ Module parse warning:
+[WebServer]   ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this warning.
+[WebServer] 
+[WebServer] File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+[WebServer]   ⚠ Critical dependency: the request of a dependency is an expression
+[WebServer]       ╭─[3807:22]
+[WebServer]  3805 │   }
+[WebServer]  3806 │   function cH(a, b) {
+[WebServer]  3807 │     this.fs = require(yT);
+[WebServer]       ·                       ──
+[WebServer]  3808 │     this.fd = a;
+[WebServer]  3809 │     this.flags = b;
+[WebServer]       ╰────
+[WebServer] 
+[WebServer] File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+[WebServer]   ⚠ Critical dependency: the request of a dependency is an expression
+[WebServer]       ╭─[3853:22]
+[WebServer]  3851 │   function axS(a, b) {
+[WebServer]  3852 │     if (b.name) try {
+[WebServer]  3853 │       var d = require(yT),
+[WebServer]       ·                       ──
+[WebServer]  3854 │         c = d.openSync(b.name, "rs");
+[WebServer]  3855 │       return new cH(c, b);
+[WebServer]       ╰────
+[WebServer] 
+[WebServer] File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+[WebServer]   ⚠ Critical dependency: the request of a dependency is an expression
+[WebServer]       ╭─[4145:22]
+[WebServer]  4143 │   a$.prototype.constructor = a$;
+[WebServer]  4144 │   function aS(a) {
+[WebServer]  4145 │     this.fs = require(yT);
+[WebServer]       ·                       ──
+[WebServer]  4146 │     this.root = a;
+[WebServer]  4147 │   }
+[WebServer]       ╰────
+[WebServer] 
+[WebServer] ready   built in 21.4 s
+
+Running 2 tests using 1 worker
+
+[Electron #0] |(electron) 'session.getAllExtensions' is deprecated and will be removed. Please use 'session.extensions.getAllExtensions' instead.
+[Electron #0] |(electron) 'session.loadExtension' is deprecated and will be removed. Please use 'session.extensions.loadExtension' instead.
+[Electron #0] |(node:66860) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:
+[Electron #0] |  Permission 'notifications' is unknown.
+[Electron #0] |  Permission 'contextMenus' is unknown.
+
+[Electron #0] |Added Extensions:  Redux DevTools, React Developer Tools
+[Electron #0] |Loading Extension: React Developer Tools
+[Electron #0] |Loading Extension: Redux DevTools
+[Electron #0] |Preferences file is located at: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/preferences.json
+[Electron #0] |(node:66860) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:
+[Electron #0] |  Permission 'notifications' is unknown.
+[Electron #0] |  Permission 'contextMenus' is unknown.
+
+[WebServer] start   building utils/common/index.js
+[WebServer] warn    Build warnings: 
+[WebServer] File: ../../node_modules/amdefine/amdefine.js:1:1
+[WebServer]   ⚠ Module parse warning:
+[WebServer]   ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this warning.
+[WebServer] 
+[WebServer] File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+[WebServer]   ⚠ Critical dependency: the request of a dependency is an expression
+[WebServer]       ╭─[3807:22]
+[WebServer]  3805 │   }
+[WebServer]  3806 │   function cH(a, b) {
+[WebServer]  3807 │     this.fs = require(yT);
+[WebServer]       ·                       ──
+[WebServer]  3808 │     this.fd = a;
+[WebServer]  3809 │     this.flags = b;
+[WebServer]       ╰────
+[WebServer] 
+[WebServer] File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+[WebServer]   ⚠ Critical dependency: the request of a dependency is an expression
+[WebServer]       ╭─[3853:22]
+[WebServer]  3851 │   function axS(a, b) {
+[WebServer]  3852 │     if (b.name) try {
+[WebServer]  3853 │       var d = require(yT),
+[WebServer]       ·                       ──
+[WebServer]  3854 │         c = d.openSync(b.name, "rs");
+[WebServer]  3855 │       return new cH(c, b);
+[WebServer]       ╰────
+[WebServer] 
+[WebServer] File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+[WebServer]   ⚠ Critical dependency: the request of a dependency is an expression
+[WebServer]       ╭─[4145:22]
+[WebServer]  4143 │   a$.prototype.constructor = a$;
+[WebServer]  4144 │   function aS(a) {
+[WebServer]  4145 │     this.fs = require(yT);
+[WebServer]       ·                       ──
+[WebServer]  4146 │     this.root = a;
+[WebServer]  4147 │   }
+[WebServer]       ╰────
+[WebServer] 
+[WebServer] ready   built in 0.12 s
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/tmp/transient/66860/bruno-scratch-3FJWhJ/metadata.json
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-OYGa7k/tmp/transient/66860/bruno-scratch-3FJWhJ/opencollection.yml
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-tODl2c/bruno.json
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-tODl2c/network-log-scroll.bru
+  ✓  1 [default] › tests/devtools/network/network-clear-logs.spec.ts:15:7 › DevTools Network Tab Clear › clears every network request row from the Network tab (6.3s)
+[Electron #0] |Debugger ending on ws://127.0.0.1:60788/a3c98d50-8f26-4647-a3eb-522d8230aeb7
+[Electron #0] |For help, see: https://nodejs.org/en/docs/inspector
+[Electron #0] |(electron) 'session.getAllExtensions' is deprecated and will be removed. Please use 'session.extensions.getAllExtensions' instead.
+[Electron #0] |(electron) 'session.loadExtension' is deprecated and will be removed. Please use 'session.extensions.loadExtension' instead.
+[Electron #0] |(node:66982) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:
+[Electron #0] |  Permission 'notifications' is unknown.
+[Electron #0] |  Permission 'contextMenus' is unknown.
+
+[Electron #0] |Added Extensions:  Redux DevTools, React Developer Tools
+[Electron #0] |Loading Extension: React Developer Tools
+[Electron #0] |Loading Extension: Redux DevTools
+[Electron #0] |Preferences file is located at: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/preferences.json
+[Electron #0] |(node:66982) ExtensionLoadWarning: Warnings loading extension at /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/extensions/lmhkpmbekcpmknklioeibfkpmmfibljd:
+[Electron #0] |  Permission 'notifications' is unknown.
+[Electron #0] |  Permission 'contextMenus' is unknown.
+
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/tmp/transient/66982/bruno-scratch-zBpG81/metadata.json
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-electron-userdata-SkRRz2/tmp/transient/66982/bruno-scratch-zBpG81/opencollection.yml
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-u4Dc91/bruno.json
+[Electron #0] |watcher add: /var/folders/m4/2r_rxr6s6y18c6ws97bp94mr0000gn/T/pw-collection-u4Dc91/network-log-scroll.bru
+  ✓  2 [default] › tests/devtools/network/network-log-details-scroll.spec.ts:26:7 › DevTools Network Log Details Scroll › last network log lines are visible and scrollable in request details panel (6.3s)
+[Electron #0] |Debugger ending on ws://127.0.0.1:60816/0cb368a0-8ba1-427e-aec4-20944d08aa2c
+[Electron #0] |For help, see: https://nodejs.org/en/docs/inspector
+
+  2 passed (36.4s)
+EXIT:0
