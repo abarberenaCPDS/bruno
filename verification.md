@@ -82,3 +82,41 @@ the test, and step through each action with DOM snapshots and screenshots.
 A standalone `trace-network-clear-logs.zip` is included for the new spec. Open
 <https://trace.playwright.dev> and drag it in, or pass it via `?trace=` if a
 URL is available.
+
+## 4. Follow-up — independent Network and Response Timeline history
+
+Commit `421474cf810ed3f39a8cb309980802e3cedace4f` separates the Network
+history index from each request's Response Timeline index while keeping
+canonical request events shared. Clearing Network now leaves the request's
+Response Timeline entry intact; clearing a request's Timeline leaves its
+Network entry intact. Late HTTP responses from runs started before Clear do not
+repopulate the Network list.
+
+### Verification
+
+```
+$ npx playwright test tests/devtools/network --project=default --workers=1 --timeout=60000
+2 passed (35.8s)
+
+$ npm run test --workspace=packages/bruno-app -- \
+    src/components/Devtools/Console/NetworkTab/index.spec.js \
+    src/components/ResponsePane/Timeline/index.spec.js \
+    src/providers/ReduxStore/slices/collections/index.spec.js \
+    src/providers/ReduxStore/slices/collections/timeline-routing.spec.js \
+    src/providers/ReduxStore/slices/collections/grpc-script.spec.js
+Test Suites: 5 passed, 5 total
+Tests: 100 passed, 100 total
+
+$ npx eslint <changed files>
+0 errors, 33 pre-existing warnings
+```
+
+### Screenshots from the passing Playwright run
+
+After Clear, the Network tab is empty:
+
+![Network tab after Clear](screenshots/network-tab-after-clear.png)
+
+The request remains in the Response Timeline:
+
+![Response Timeline after Network clear](screenshots/response-timeline-after-network-clear.png)
